@@ -12,23 +12,23 @@ from datetime import datetime
 app = FastAPI()
 
 # Azure Speech Configuration
-speech_key = "764b87b8dcf84111a073aeefc8476b8c"  # Replace with your actual Azure Speech API key
+speech_key =   # Replace with your actual Azure Speech API key
 service_region = "centralindia"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 speech_config.speech_synthesis_voice_name = "en-AU-WilliamNeural"  # Male voice
 
 # OpenAI API key setup
-openai.api_key = "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"  # Replace with your actual OpenAI API key
+openai.api_key =  # Replace with your actual OpenAI API key
 
 # Pyttsx3 fallback voice synthesis
 engine = pyttsx3.init()
 
 # Weather API key setup (using OpenWeatherMap)
-weather_api_key ="3acc29766fbcf018b58f0f57838a24bd"  # Replace with your OpenWeatherMap API key
+weather_api_key = # Replace with your OpenWeatherMap API key
 weather_city = "KOLKATA"  # Specify your city here
 
 # Path to the wake word model
-keyword_model_path = ("C:\\Users\\sauni\\Downloads\\JARVIS AI KEYWORD\\JARVIS AI.table")  # Replace with the path to your keyword model
+keyword_model_path = ()  # Replace with the path to your keyword model
 
 # Load the wake word model
 keyword_model = speechsdk.KeywordRecognitionModel(keyword_model_path)
